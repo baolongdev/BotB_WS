@@ -1,14 +1,14 @@
 {
-  "name": "Fleeting Notes",
-  "short_name": "Fleeting Notes",
+  "name": "WORKSHOP ARDUINO: BẮT MẠCH",
+  "short_name": "WORKSHOP ARDUINO: BẮT MẠCH",
   "icons": [
     {
-      "src": "/favicons/196.png",
+      "src": "/img/BotB_Logo.jpg",
       "sizes": "196x196",
       "type": "image/png"
     },
     {
-      "src": "/favicons/512.png",
+      "src": "/img/BotB_Logo.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }

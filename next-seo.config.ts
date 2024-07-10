@@ -2,13 +2,13 @@ import { DefaultSeoProps } from "next-seo";
 
 const description = ""
 const urlBase = ""
-const title = "Blong"
+const title = "VL+xBOTB"
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
     // Page Title
-    titleTemplate: "%s | Personal Portfolio & Resume",
+    titleTemplate: "%s | WORKSHOP ARDUINO: BẮT MẠCH",
     title,
-    defaultTitle: "Personal Portfolio & Resume ",
+    defaultTitle: "WORKSHOP ARDUINO: BẮT MẠCH ",
     canonical: `${urlBase}`,
     description,
     // Meta Tags
@@ -18,7 +18,7 @@ const config: DefaultSeoProps = {
         type: 'website',
         locale: 'en_IE',
         url: `${urlBase}`,
-        title: 'Personal Portfolio & Resume',
+        title: 'WORKSHOP ARDUINO: BẮT MẠCH',
         description,
         profile: {
             firstName: 'Le',
@@ -27,7 +27,7 @@ const config: DefaultSeoProps = {
             gender: 'male',
         },
         images: [{
-            url: `${urlBase}/favicon/og-image.png`,
+            url: `${urlBase}/favicon/img/banner1.jpg`,
             width: 1200,
             height: 787,
             alt: 'Og Image Alt',
@@ -41,24 +41,24 @@ const config: DefaultSeoProps = {
         {
             rel: 'icon',
             type: 'image/png',
-            href: '/favicon/32.png',
+            href: '/img/BotB_Logo.jpg',
             sizes: '32x32'
         },
         {
             rel: 'icon',
             type: 'image/png',
-            href: '/favicon/16.png',
+            href: '/img/BotB_Logo.jpg',
             sizes: '16x16'
         },
         {
             rel: "apple-touch-icon",
             sizes: "180x180",
-            href: "/favicon/180.png"
+            href: "/img/BotB_Logo.jpg"
         },
         {
             rel: "shortcut icon",
             type: "image/png",
-            href: "/favicon/196.png"
+            href: "/img/BotB_Logo.jpg"
         },
         {
             rel: "manifest",
