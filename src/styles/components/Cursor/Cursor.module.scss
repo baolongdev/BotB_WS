@@ -1,0 +1,84 @@
+@import "../../assets/styles/functions";
+@import "../../assets/styles/grid";
+// .custom_cursor {
+//   // top: 0;
+//   // left: 0;
+//   // transform: translate(-100px, -100px);
+//   position: fixed;
+//   user-select: none;
+//   pointer-events: none;
+//   z-index: 10000;
+//   mix-blend-mode: difference;
+
+//   &__followed {
+//     transition: opacity 0.3s ease;
+//   }
+
+//   &__point,
+//   &__followed {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+
+//   &__point {
+//     // width: rem(10);
+//     // height: rem(10);
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     background-color: color(white-100);
+//     transition: background-color 0.3s ease, transform 0.3s ease, width 0.3s ease,
+//       height 0.3s ease;
+//   }
+// }
+
+.cursor,
+.cursorPointer {
+  position: fixed;
+  border-radius: 50%;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transition: opacity 0.3s ease;
+
+  // @include tablet {
+  //   display: none;
+  // }
+
+  &.cursor {
+    width: 30px;
+    height: 30px;
+    background-color: var(--t-bright);
+    transition: background-color 0.3s ease, transform 0.3s ease, width 0.3s ease,
+      height 0.3s ease;
+    opacity: 0.2;
+  }
+
+  &.cursorPointer {
+    width: 10px;
+    height: 10px;
+    background-color: var(--t-bright);
+  }
+
+  &.-hover-nav {
+    // transform: translate(-50%, -50%) scale(6);
+    width: rem(60);
+    height: rem(60);
+    opacity: 1;
+  }
+  &.-hover-menu-btn {
+    // transform: translate(-50%, -50%) scale(30);
+    width: rem(50);
+    height: rem(50);
+    opacity: 1;
+  }
+  &.-hover-button {
+    // transform: translate(-50%, -50%) scale(12);
+    width: rem(120);
+    height: rem(120);
+    opacity: 1;
+  }
+}

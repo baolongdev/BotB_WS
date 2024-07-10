@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react-hooks/rules-of-hooks": "off",
+    "jsx-a11y/alt-text": "off",
+    // "react-hooks/rules-of-hooks": "off",
+    // "no-anonymous-default-export": "off",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "id": "personal-portfolio&resume",
+    "name": "Personal Portfolio & Resume",
+    "version": "0.1.0",
+    "minAppVersion": "0.1.0",
+    "description": "Personal Portfolio & Resume",
+    "author": "Blong",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}

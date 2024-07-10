@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "./functions" as *;
+
+// common translate
+@for $i from 0 through 15 {
+  .-tr-#{$i} {
+    opacity: 0 !important;
+    // transform: translateY(rem(50)) rotate(3deg) !important;
+    transform: translateY(12px) rotate(3deg) !important;
+    transition: 0.3s transform, 0.3s opacity;
+  }
+}
+
+.-loaded {
+  .-active {
+    @for $i from 0 through 15 {
+      $delay: math.div($i, 20);
+      .-tr-#{$i} {
+        opacity: 1 !important;
+        transform: translateY(0) rotate(0deg) !important;
+        transition: 0.5s transform #{$delay}s, 0.5s opacity #{$delay}s;
+      }
+    }
+  }
+}

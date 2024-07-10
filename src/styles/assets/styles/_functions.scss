@@ -1,0 +1,18 @@
+@use "sass:math";
+
+// @function rem($values...) {
+//   $base-font-size: 16px;
+//   $rem-values: ();
+
+//   @each $value in $values {
+//     $rem-value: math.div($value, $base-font-size) * 1rem;
+//     $rem-values: append($rem-values, $rem-value);
+//   }
+
+//   @return $rem-values;
+// }
+
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
