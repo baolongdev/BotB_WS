@@ -3,7 +3,7 @@ import { AppDispatch, RootState } from '@redux/types/types';
 import { Form, message, Modal } from 'antd';
 import React, { Fragment, ReactNode, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import onFinishFailed from './onFinishFailed';
+import onFinishFailed from '../../view/Share/ImageFileUploadForm/onFinishFailed';
 
 export default function ModalCustome() {
     const [confirmLoading, setConfirmLoading] = useState(false);
