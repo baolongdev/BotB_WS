@@ -16,6 +16,7 @@ import { AnimatePresence } from "framer-motion";
 import { StrictMode } from "react";
 import { store } from "@redux/store";
 import { Provider } from "react-redux";
+import BreakpointsContextProvider from "../context/breakpointsContext";
 // Globals CSS
 // import "../styles/globals.css";
 // import "../styles/loader.css";
@@ -32,9 +33,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <PostHogProvider client={posthog}>
         {/* ============== */}
         <AnimatePresence mode='wait'>
-          <Provider store={store}>
-            <Component {...pageProps} />
-          </Provider>
+          <BreakpointsContextProvider>
+            <Provider store={store}>
+              <Component {...pageProps} />
+            </Provider>
+          </BreakpointsContextProvider>
         </AnimatePresence>
       </PostHogProvider>
       <Analytics />

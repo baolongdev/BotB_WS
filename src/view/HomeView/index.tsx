@@ -21,8 +21,8 @@ export default function HomeView() {
         <>
             <Flex gap="middle" align="center" vertical>
                 <Flex justify={'center'} align={'center'} vertical>
-                    <Title style={{ margin: 0 }}>WORKSHOP ARDUINO: BẮT MẠCH</Title>
-                    <Title level={5}>NƠI BẠN NẮM BẮT NHỮNG BOARD MẠCH ĐIỆN TỬ</Title>
+                    <Title style={{ margin: 0, textAlign: 'center' }}>WORKSHOP ARDUINO: BẮT MẠCH</Title>
+                    <Title level={5} style={{ textAlign: 'center' }}>NƠI BẠN NẮM BẮT NHỮNG BOARD MẠCH ĐIỆN TỬ</Title>
                 </Flex>
                 <Flex gap="middle" justify={'center'} align={'flex-start'}>
                     <Popover content={

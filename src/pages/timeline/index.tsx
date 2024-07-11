@@ -1,6 +1,7 @@
 import Dashboard from '@layouts/Dashboard'
 import { Button, Card, Divider, Flex, Timeline, Typography } from 'antd'
 import React from 'react'
+import { useBreakpoints } from '../../context/breakpointsContext';
 
 const { Text, Title, Link } = Typography;
 export default function index() {
@@ -8,7 +9,7 @@ export default function index() {
         <Dashboard>
             <Flex gap="middle" align="center" vertical>
                 <Flex justify={'center'} align={'center'} vertical>
-                    <Title style={{ margin: 0 }}>TIMELINE CHƯƠNG TRÌNH </Title>
+                    <Title style={{ margin: 0, textAlign: 'center' }}>TIMELINE CHƯƠNG TRÌNH </Title>
                 </Flex>
                 <Button size='large' type='primary'>
                     <Link href='./' target='_parent'>
@@ -16,8 +17,8 @@ export default function index() {
                     </Link>
                 </Button>
                 <Card title={<Title style={{ textAlign: 'center', fontWeight: 'bold' }} level={5}>Thông tin Workshop Arduino: Bắt Mạch</Title>}
-                    hoverable bordered={false} style={{ width: 1000 }}>
-                    <Flex gap="large" justify={'center'} align={'flex-start'}>
+                    bordered={false} style={{ margin: '0 24px 0 24px', minWidth: '200px' }}>
+                    <Flex gap="large" justify={'center'} align={'flex-start'} vertical>
                         <Timeline
                             // mode="alternate"
                             items={[
