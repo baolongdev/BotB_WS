@@ -23,6 +23,7 @@ export const onFinish = async ({ values, form, processFile, folderId }: OnFinish
     const feedbackFile = new File([feedbackContent], `feedback_${name}.txt`, {
         type: 'text/plain',
     });
+    message.info('Đang trong quá trình thực hiện vui lòng chờ....');
     try {
         for (let file of fileList) {
             if (file.originFileObj instanceof Blob) {
@@ -48,13 +49,13 @@ export const onFinish = async ({ values, form, processFile, folderId }: OnFinish
             throw new Error(`Failed to upload feedback file`);
         }
         form.resetFields();
-        message.success('Upload completed successfully.');
+        message.success('Tải lên hoàn tất.');
         setTimeout(() => {
             router.push('/thank-you'); // Replace with your actual thank-you page route
         }, 5000);
     } catch (error) {
         console.error('Failed to upload files:', error);
-        message.error('Failed to upload files. Please try again.');
+        message.error('Không thể tải tập tin lên. Vui lòng thử lại.');
     }
 };
 

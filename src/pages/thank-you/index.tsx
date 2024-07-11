@@ -13,7 +13,7 @@ export default function index() {
                         BotB Facebook Page
                     </Link>
                 </Button>
-                <iframe src="https://giphy.com/embed/JlpjgShzDsrMIyFu5U" width="480" height="360" allowFullScreen style={{ pointerEvents: 'none' }}></iframe>
+                <iframe src="https://giphy.com/embed/JlpjgShzDsrMIyFu5U" width="100%" height="360" allowFullScreen style={{ pointerEvents: 'none' }}></iframe>
                 <Text style={{ textAlign: 'center', fontSize: '16px', lineHeight: '1.6', maxWidth: '700px' }}>
                     Chúng tôi xin chân thành cảm ơn sự tham gia nhiệt tình của các bạn trong Workshop Arduino: Bắt Mạch vào ngày hôm nay. Sự hiện diện và đóng góp của các bạn đã làm cho sự kiện trở nên thành công và ý nghĩa hơn bao giờ hết. Qua các buổi thuyết trình, thực hành và giao lưu, chúng ta đã cùng nhau khám phá và trải nghiệm những ứng dụng thực tế của Arduino trong cuộc sống hàng ngày. Chúng ta không chỉ nâng cao kiến thức chuyên môn mà còn xây dựng được những mối quan hệ chặt chẽ, góp phần thúc đẩy sự phát triển của cộng đồng kỹ thuật số Việt Nam.
                     <br /><br />
