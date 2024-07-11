@@ -28,6 +28,16 @@ export default function Index() {
                 name: file.name,
                 content: await fetchFileContent(file.download_url)
             })));
+            // Sort files with .ino extension to the top
+            filesWithContent.sort((a, b) => {
+                if (a.name.endsWith('.ino') && !b.name.endsWith('.ino')) {
+                    return -1;
+                }
+                if (!a.name.endsWith('.ino') && b.name.endsWith('.ino')) {
+                    return 1;
+                }
+                return 0;
+            });
             setFiles(filesWithContent);
         };
 
@@ -56,7 +66,11 @@ export default function Index() {
             <Button onClick={returnPage} type='primary'>Trở về</Button>
             <div style={{ padding: 24 }}>
                 <Segmented
-                    options={files.map(file => file.name)}
+                    options={files.map(file => ({
+                        value: file.name,
+                        label: file.name,
+                        style: { color: file.name.endsWith('.ino') ? 'blue' : 'inherit' }
+                    }))}
                     onChange={(value) => {
                         const newIndex = files.findIndex(file => file.name === value);
                         setSelectedFileIndex(newIndex);
